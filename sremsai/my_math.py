@@ -1,0 +1,16 @@
+def calculate(operation,num1,num2):
+    operation=operation.lower()
+
+    if operation=="add":
+     return num1+num2
+    elif operation=="subtract":
+        return num1-num2
+    elif operation=="multiply":
+        return num1*num2
+    elif operation=="divide":
+        return num1/num2
+    else:
+        raise ValueError(f"Unknown operation:{operation}")
+
+print(calculate("add",5,3))
+print(calculate("divide",4,2))
